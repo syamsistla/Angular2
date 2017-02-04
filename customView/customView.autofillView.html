@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="css/typeahead.css">
+<div>
+    <div *ngFor="let rul of rulListArray" #rList>
+          <!--   <p>{{rul.condition}} <mark class="red">{{rul.event}}.{{rul.property}} </mark>{{rul.operator}} <mark class="blue">{{rul.operend}}</mark></p>  
+            -->
+         <p><mark class="condition"> {{rul.condition}} </mark><mark class="event">{{rul.event}} </mark><mark class="operator">{{rul.operator}} </mark><mark class="operand">{{rul.operend}}</mark><br/>
+    </div>
+</div>
+<div class="contDiv">
+    <input #inputElement type="text" name="name" (keyup) = "onKeyprassHandler($event, 'when ')" value = {{inputStr}} class="typeaheadInput">
+    <div class="listDiv"[style.display]='listDisplay'>
+        <div *ngFor="let dp of dataProvider" class="itemDiv" (click)="clickItem(dp, inputElement)">
+               <p> {{dp.name}}</p>
+        </div>
+    </div> 
+    
+</div>
+
+
+
+

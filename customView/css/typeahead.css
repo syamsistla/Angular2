@@ -1,0 +1,57 @@
+p{
+    margin: 0px;
+    padding: 0px;
+}
+.contDiv{
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+}
+.typeaheadInput{
+    width: 400px;
+    height: 30px;
+}
+.listDiv{  
+  
+  background-color: #F0F8FF;
+  position: fixed;
+  width: 200px;
+  height: 100px;
+  z-index: 9999;
+  border: 1px;
+  border-style: solid;
+  border-color: #000000;
+  position: relative;
+  vertical-align: top;
+  overflow: auto;
+}
+.itemDiv{
+   margin: 1px;
+   height: 30px;
+   vertical-align:middle;
+   padding-left: 10px;
+   background-color: #E3E3E3;
+}
+div.itemDiv:hover{
+    background-color: #CCCCCC;
+    cursor: pointer;
+}
+
+mark.condition {
+    color:#202020;
+    background: none;
+}
+
+mark.event {
+    color:#0033ff;
+    background: none;
+}
+
+mark.operator {
+    color:#ff6600;
+    background: none;
+}
+mark.operand {
+    color:#99ff66;
+    background: none;
+}
